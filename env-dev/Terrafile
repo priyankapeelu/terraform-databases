@@ -2,6 +2,3 @@ mongodb:
   source:  "https://github.com/priyankapeelu/tf-module-mongodb.git"
   version: "main"
 
-redis:
-  source:  "https://github.com/priyankapeelu/tf-module-redis.git"
-  version: "main"
