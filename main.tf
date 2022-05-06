@@ -3,13 +3,10 @@ module "mongodb" {
   ENV    = var.ENV
 }
 
-#  WORKSTATION_IP = var.WORKSTATION_IP
-#}
-
-#module "redis" {
-#  source = "./vendor/modules/redis"
-#  ENV    = var.ENV
-#}
+module "redis" {
+  source = "./vendor/modules/redis"
+  ENV    = var.ENV
+}
 #
 #module "mysql" {
 #  source         = "./vendor/modules/mysql"
