@@ -6,4 +6,10 @@ redis:
   source:  "https://github.com/priyankapeelu/tf-module-redis.git"
   version: "main"
 
+mysql:
+  source:  "https://github.com/priyankapeelu/tf-module-mysql.git"
+  version: "main"
 
+rabbitmq:
+  source:  "https://github.com/priyankapeelu/tf-module-rabbitmq.git"
+  version: "main"
