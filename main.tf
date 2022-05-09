@@ -1,21 +1,15 @@
-module "mongodb" {
-  source                    = "./vendor/modules/mongodb"
-  ENV                       = var.ENV
-  WORKSTATION_IP  =var.WORKSTATION_IP
-}
+module "vpc" {
+  source = "./vendor/modules/vpc"
+  VPC_CIDR = var.VPC_CIDR
+  ENV = var.ENV
+  PRIVATE_SUBNET_CIDR = var.PRIVATE_SUBNET_CIDR
+  PUBLIC_SUBNET_CIDR =var.PUBLIC_SUBNET_CIDR
+  AZ =var.AZ
+  DEFAULT_VPC_ID = var.DEFAULT_VPC_ID
+  DEFAULT_VPC_CIDR = var.DEFAULT_VPC_CIDR
+  DEFAULT_VPC_RT = var.DEFAULT_VPC_RT
+  HOSTEDZONE_PRIVATE_ID = var.HOSTEDZONE_PRIVATE_ID
+  HOSTEDZONE_PUBLIC_ID = var.HOSTEDZONE_PUBLIC_ID
+  HOSTEDZONE_PUBLIC_ZONE = var.HOSTEDZONE_PUBLIC_ZONE
 
-module "redis" {
-  source                     = "./vendor/modules/redis"
-  ENV                       = var.ENV
-}
-
-module "mysql" {
-  source                     = "./vendor/modules/mysql"
-  ENV                       = var.ENV
-  WORKSTATION_IP  =var.WORKSTATION_IP
-}
-
-module "rabbitmq" {
-  source                     = "./vendor/modules/rabbitmq"
-  ENV                       = var.ENV
 }
