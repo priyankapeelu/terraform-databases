@@ -20,7 +20,7 @@ module "rabbitmq" {
   ENV    = var.ENV
 }
 
-output "rabbitmq"
+output "rabbitmq" {
   value = module.rabbitmq.rabbitmq
 }
 
