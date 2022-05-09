@@ -19,3 +19,4 @@ module "rabbitmq" {
   source = "./vendor/modules/rabbitmq"
   ENV    = var.ENV
 }
+
