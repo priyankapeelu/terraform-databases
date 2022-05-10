@@ -15,7 +15,6 @@ variable "RABBITMQ_PORT" {}
 variable "RABBITMQ_ENGINE_VERSION" {}
 variable "RABBITMQ_INSTANCE_TYPE" {}
 
-variable "ENV" {}
 variable "ELASTICACHE_NODE_TYPE" {}
 variable "ELASTICACHE_NODE_COUNT" {}
 variable "ELASTICACHE_PORT" {}
